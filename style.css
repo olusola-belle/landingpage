@@ -1,25 +1,129 @@
-img{
+
+.content>img{
     height: 200px;
-    width: 150px;
+    width: 200px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.container{
+    width: 85%;
+    margin: auto;
+}
+
+.right>a{
+    margin-left: 5px;
+    margin-right: 5px;
+}
+a{
+    text-decoration: none;
+    color: black;
 }
 body{
     font-family: Arial, Helvetica, sans-serif;
+    background-color: #F3E8EB;
 }
-.container{
-    border: 4px solid black;
-    background-color:  	#FFFFF0;
+
+.navigation{
+    display: flex;
+    align-items: center;
 }
+
+.left{
+   flex-basis: 30%;
+}
+
+.right{
+    flex-basis: 80%;
+    margin-left: 70%;
+ }
+
+ .showcase{
+     display: flex;
+ }
+
+ .showcase_left{
+     flex-basis: 80%;
+     padding: 10px;
+     font-size: small;
+ }
+
+.showcase_left>button{
+    margin-top: 20px;
+    background-color: #0099CC;
+    color: white;
+    border:1px solid #0099CC ;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+ .showcase_right{
+     flex-basis: 30%;
+     border-radius: 5px;
+     justify-content: flex-end;
+ }
+
+ .showcase_right>img{
+     width: 200px;
+     height: 200px;
+     border-radius: 5px;
+ }
+
+
 .wrap{
-    border: 4px solid green;
+    margin-top: 20px;
+    margin-bottom: 20px;
     background-color: cornsilk;
+    font: x-small Arial;
+    display:flex;
+    justify-content: space-around;
+}
+
+.content{
+    flex-basis: 22%;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.content>p{
+    font-style: italic;
+}
+
+.above_flex{
+    text-align: center;
+}
+
+.below_flex{
+    margin-top: 50px;
+    text-align: center;
+    font-size: smaller;
 }
 .footer{
-    border: 4px solid blue;
+    border: 1px solid #f4f4f4;
     background-color: #D3D3D3;
+    padding: 10px;
     display: flex;
-    flex-direction: column;
-    align-content: center;
+    justify-content: center;
+    border-radius: 4px;
 }
-.footer p{
-    border: 6px solid blueviolet;
+.footertext{
+    border: 1px solid #0099CC;
+    background-color: #0099CC ;
+    flex-basis: 80%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 10px;
+    color: white;
+    border-radius: 7px;
+    font-size: smaller;
+}
+
+.footertext>button{
+    border: 1px solid whitesmoke;
+    border-radius: 4px;
+    padding: 5px;
+    align-items: center;
+    background-color: #0099CC;
+    color: white;
 }
